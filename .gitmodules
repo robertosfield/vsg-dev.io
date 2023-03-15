@@ -13,3 +13,6 @@
 [submodule "vsgExamples"]
 	path = vsgExamples
 	url = https://github.com/vsg-dev/vsgExamples.git
+[submodule "docs/vsgTutorial"]
+	path = docs/vsgTutorial
+	url = https://github.com/robertosfield/vsgTutorial.git
