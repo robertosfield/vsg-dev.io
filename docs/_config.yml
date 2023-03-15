@@ -32,8 +32,8 @@ header_pages:
   - features.md
   - screenshots.md
   - source.md
-  - documentation.md
   - tutorial.md
+  - documentation.md
   - discussion.md
   - services.md
 
