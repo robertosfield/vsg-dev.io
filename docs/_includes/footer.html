@@ -4,14 +4,14 @@
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
+      <div class="footer-col">
         <p>{{ site.description | escape }}</p>
+      </div>
     </div>
 
-  {%- for entry in site.minima.social_links -%}
-    <div class="footer-col">
-    {%- include social-item.html item = entry -%}
+    <div class="social-links">
+      {%- include social.html -%}
     </div>
-  {%- endfor -%}
 
   </div>
 
