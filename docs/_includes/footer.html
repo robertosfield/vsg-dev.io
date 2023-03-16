@@ -9,9 +9,15 @@
       </div>
     </div>
 
-    <div class="social-links">
-      {%- include social.html -%}
-    </div>
+  <div class="social-links">
+
+    <li>{% assign entry = include.item %}
+      <a {% unless entry.platform == 'rss' %}rel="me" {% endunless %}href="{{ entry.user_url }}" target="_blank" title="{{ entry.title | default: entry.platform }}">
+        <svg class="svg-icon grey">
+          <use xlink:href="{{ '/assets/minima-social-icons.svg#' | append: entry.platform | relative_url }}"></use>
+        </svg>
+      </a>
+    </li>
 
   </div>
 
